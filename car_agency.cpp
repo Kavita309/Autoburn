@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<ctype.h>
 using namespace std;
+
 /*working with linked list*/
 struct node1
 {
@@ -55,6 +56,7 @@ void create()
     temp->number=4;
     temp->next=NULL;
 }
+
 void insertion()
 {   char word[20];
     int flag=0;
@@ -159,7 +161,7 @@ void display()
 {
  if(head==NULL)
  {
-     cout<<"\nEmpty.";
+     cout<<"\nEmpty.\n";
      return;
  }
  ptr=head;
@@ -169,7 +171,7 @@ void display()
      cout<<ptr->name;
      cout<<"\nCar's price:";
      cout<<ptr->price;
-     cout<<"\n----------------------------------";
+     cout<<"\n-----------------------------------------------------";
      ptr=ptr->next;
 
  }
@@ -229,7 +231,7 @@ void q_delete()
               r->cust_name[i]=toupper(r->cust_name[i]);
          }
          s_push(r->car_name,r->cust_name,r->cust_no);
-         cout<<"\nONE ORDER COMPLETED.(According to first come first served rule.)";
+         cout<<"\nONE ORDER COMPLETED.(According to first come first served rule.)\n";
          delete r;
     }
 }
